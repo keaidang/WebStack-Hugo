@@ -2,8 +2,8 @@
     "name": "webstack-hugo-on-edgeone",
     "private": true,
     "scripts": {
-      "prebuild": "rm -rf exampleSite/themes/webstack-hugo && mkdir -p exampleSite/themes/webstack-hugo && tar --exclude='./exampleSite' --exclude='./node_modules' --exclude='./.git' --exclude='./.github' -cf - . | tar -C exampleSite/themes/webstack-hugo -xf -",
-      "build": "hugo --minify -s exampleSite",
+      "prebuild": "set -e; SITE=exampleSite; THEME1=\"$SITE/themes/webstack-hugo\"; THEME2=\"$SITE/themes/WebStack-Hugo\"; rm -rf \"$THEME1\" \"$THEME2\"; mkdir -p \"$THEME1\" \"$THEME2\"; tar --exclude='./exampleSite' --exclude='./node_modules' --exclude='./.git' --exclude='./.github' --exclude='./.hugo_build.lock' --exclude='./public' -cf - . | tar -C \"$THEME1\" -xf -; tar --exclude='./exampleSite' --exclude='./node_modules' --exclude='./.git' --exclude='./.github' --exclude='./.hugo_build.lock' --exclude='./public' -cf - . | tar -C \"$THEME2\" -xf -",
+      "build": "npm run prebuild && hugo --minify -s exampleSite",
       "dev": "hugo server -D -s exampleSite",
       "clean": "rm -rf exampleSite/public",
       "postinstall": "git submodule update --init || true"
