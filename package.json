@@ -2,9 +2,9 @@
     "name": "webstack-hugo-on-edgeone",
     "private": true,
     "scripts": {
-      "build": "hugo --minify",
-      "dev": "hugo server -D",
-      "clean": "rm -rf public",
+      "build": "hugo --minify -s exampleSite",
+      "dev": "hugo server -D -s exampleSite",
+      "clean": "rm -rf exampleSite/public",
       "postinstall": "git submodule update --init || true"
     },
     "devDependencies": {
