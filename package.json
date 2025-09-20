@@ -1,10 +1,11 @@
 {
-    "name": "webstack-hugo-on-eo",
+    "name": "webstack-hugo-on-edgeone",
     "private": true,
     "scripts": {
       "build": "hugo --minify",
       "dev": "hugo server -D",
-      "clean": "rm -rf public"
+      "clean": "rm -rf public",
+      "postinstall": "git submodule update --init || true"
     },
     "devDependencies": {
       "hugo-extended": "^0.129.0"
