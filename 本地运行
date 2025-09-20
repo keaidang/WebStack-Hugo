@@ -1,0 +1,5 @@
+& "C:\Users\keaidang\AppData\Local\Microsoft\WinGet\Packages\Hugo.Hugo_Microsoft.Winget.Source_8wekyb3d8bbwe\hugo.exe" `
+  server -s exampleSite --themesDir .. --theme . `
+  -b http://localhost:1314/ --bind 127.0.0.1 --port 1314
+
+  

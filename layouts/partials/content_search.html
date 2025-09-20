@@ -5,8 +5,8 @@
                 <div class="s-type text-center">
                     <div class="s-type-list big">
                         <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                        <label for="type-baidu"   data-id="group-a"><span>常用</span></label>
-                        <label for="type-baidu1"  data-id="group-b"><span>搜索</span></label>
+                        <label for="type-google"   data-id="group-a"><span>常用</span></label>
+                        <label for="type-google1"  data-id="group-b"><span>搜索</span></label>
                         <label for="type-whois"   data-id="group-c"><span>工具</span></label>
                         <label for="type-zhihu"   data-id="group-d"><span>社区</span></label>
                         <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
@@ -15,28 +15,22 @@
                 </div>
             </div>
 
-            <form action="https://www.baidu.com?s=" method="get" target="_blank" class="super-search-fm">
+            <form action="https://www.google.com/search?q=" method="get" target="_blank" class="super-search-fm">
                 <input type="text" id="search-text" class="form-control smart-tips search-key" 
-                    zhannei="" placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
+                    zhannei="" placeholder="谷歌搜索" style="outline:0" autocomplete="off">
                 <button class="submit" type="submit"><i class="iconfont icon-search"></i></button>
             </form>
 
             <div id="search-list" class="hide-type-list">
                 <div class="search-group group-a">
                     <ul class="search-type">
-		        <li><input hidden="" type="radio" name="type" checked="checked"
-                                id="type-baidu"
-                                value="https://www.baidu.com/s?wd=" 
-                                data-placeholder="百度一下，你就知道">
-                            <label for="type-baidu"><span class="text-muted">百度</span></label>
-                        </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-bing"
                                 value="https://cn.bing.com/search?q=" 
                                 data-placeholder="微软 Bing 搜索">
 			    <label for="type-bing"><span class="text-muted">必应</span></label>
                         </li>
-                        <li><input hidden="" type="radio" name="type" 
+                        <li><input hidden="" type="radio" name="type" checked="checked"
                                 id="type-google"
                                 value="https://www.google.com/search?q=" 
                                 data-placeholder="谷歌搜索">
@@ -57,41 +51,23 @@
                 </div>
                 <div class="search-group group-b">
                     <ul class="search-type">
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-baidu1"
-                                value="https://www.baidu.com/s?wd=" 
-                                data-placeholder="百度一下，你就知道">
-                            <label for="type-baidu1"><span class="text-muted">百度</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
+                        <li><input hidden="" type="radio" name="type" checked="checked"
                                 id="type-google1"
                                 value="https://www.google.com/search?q=" 
                                 data-placeholder="谷歌搜索">
                             <label for="type-google1"><span class="text-muted">谷歌</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" 
-                                id="type-360"
-                                value="https://www.so.com/s?q=" 
-                                data-placeholder="360 好搜">
-                            <label for="type-360"><span class="text-muted">360</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-sogo"
-                                value="https://www.sogou.com/web?query=" 
-                                data-placeholder="搜狗搜索"> 
-                            <label for="type-sogo"><span class="text-muted">搜狗</span></label>
+                                id="type-ddg"
+                                value="https://duckduckgo.com/?q=" 
+                                data-placeholder="DuckDuckGo">
+                            <label for="type-ddg"><span class="text-muted">DuckDuckGo</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-bing1"
                                 value="https://cn.bing.com/search?q=" 
                                 data-placeholder="微软 Bing 搜索">
                             <label for="type-bing1"><span class="text-muted">必应</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-sm"
-                                value="https://yz.m.sm.cn/s?q=" 
-                                data-placeholder="UC 移动端搜索">
-                            <label for="type-sm"><span class="text-muted">神马</span></label>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +93,7 @@
                         </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-ping"
-                                value="https://ping.chinaz.com/"
+                                value="https://www.itdog.cn/ping/"
                                 data-placeholder="请输入网址(不带 https://)">
                             <label for="type-ping"><span class="text-muted">PING 检测</span></label>
                         </li>

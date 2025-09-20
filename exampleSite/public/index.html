@@ -9,7 +9,7 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#f9f9f9" />
     <title>WebStack-Hugo 网址导航</title>
-    <link rel="shortcut icon" href="http://localhost:1314/assets/images/bi-favicon.png" />
+    <link rel="shortcut icon" href="http://localhost:1314/assets/images/favicon.svg" />
     <meta name="keywords" content="WebStack-Hugo 网址导航" />
     
     <meta name="baidu-site-verification" content="codeva-cCAOSG8MBO" />
@@ -62,7 +62,7 @@
 
 
 
-<body class="io-grey-mode">
+<body class="io-black-mode">
 
     
     <div id="loading">
@@ -78,7 +78,7 @@
                 transform: translate(-50%, -50%);
                 font-family: helvetica, arial, sans-serif;
                 font-weight: 900;
-                color: #f1404b;
+                color: #3A86FF;
                 letter-spacing: 0.2em
             }
 
@@ -88,7 +88,7 @@
                 display: block;
                 width: 15px;
                 height: 15px;
-                background: #f1404b;
+                background: #3A86FF;
                 position: absolute;
                 animation: load .7s infinite alternate ease-in-out
             }
@@ -120,7 +120,7 @@
                 }
             }
         </style>
-        <div class="loader">Hugo 网址导航主题</div>
+        <div class="loader">9o 网址导航</div>
     </div>
     
     <div class="page-container">
@@ -132,15 +132,15 @@
                     
                     <div class="logo overflow-hidden">
                         <a href="" class="logo-expanded">
-                            <img src="http://localhost:1314/assets/images/bi-expand-dark.png" height="40" class="logo-light"
+                            <img src="http://localhost:1314/assets/images/logo-9o.svg" height="40" class="logo-light"
                                 alt="WebStack-Hugo 网址导航">
-                            <img src="http://localhost:1314/assets/images/bi-expand-light.png" height="40" class="logo-dark d-none"
+                            <img src="http://localhost:1314/assets/images/logo-9o.svg" height="40" class="logo-dark d-none"
                                 alt="WebStack-Hugo 网址导航">
                         </a>
                         <a href="" class="logo-collapsed">
-                            <img src="http://localhost:1314/assets/images/bi.png" height="40" class="logo-light"
+                            <img src="http://localhost:1314/assets/images/logo-9o.svg" height="40" class="logo-light"
                                 alt="WebStack-Hugo 网址导航">
-                            <img src="http://localhost:1314/assets/images/bi.png" height="40" class="logo-dark d-none"
+                            <img src="http://localhost:1314/assets/images/logo-9o.svg" height="40" class="logo-dark d-none"
                                 alt="WebStack-Hugo 网址导航">
                         </a>
                     </div>
@@ -305,9 +305,9 @@
                 <div class="container-fluid p-0">
 
                     <a href="" class="navbar-brand d-md-none" title="WebStack-Hugo 网址导航">
-                        <img src="http://localhost:1314/assets/images/bi.png" class="logo-light"
+                        <img src="http://localhost:1314/assets/images/logo-9o.svg" class="logo-light"
                             alt="WebStack-Hugo 网址导航">
-                        <img src="http://localhost:1314/assets/images/bi.png" class="logo-dark d-none"
+                        <img src="http://localhost:1314/assets/images/logo-9o.svg" class="logo-dark d-none"
                             alt="WebStack-Hugo 网址导航">
                     </a>
 
@@ -337,7 +337,7 @@
 			    </li>
 			
 			<li >
-				<a href="https://weiyan.cc/">
+				<a href="https://blog.keaidang.com/">
                                     <i class="fa fa-book fa-lg mr-2"></i>
                                     <span>作者</span>
                                 </a>
@@ -431,8 +431,8 @@
                 <div class="s-type text-center">
                     <div class="s-type-list big">
                         <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                        <label for="type-baidu"   data-id="group-a"><span>常用</span></label>
-                        <label for="type-baidu1"  data-id="group-b"><span>搜索</span></label>
+                        <label for="type-google"   data-id="group-a"><span>常用</span></label>
+                        <label for="type-google1"  data-id="group-b"><span>搜索</span></label>
                         <label for="type-whois"   data-id="group-c"><span>工具</span></label>
                         <label for="type-zhihu"   data-id="group-d"><span>社区</span></label>
                         <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
@@ -441,28 +441,22 @@
                 </div>
             </div>
 
-            <form action="https://www.baidu.com?s=" method="get" target="_blank" class="super-search-fm">
+            <form action="https://www.google.com/search?q=" method="get" target="_blank" class="super-search-fm">
                 <input type="text" id="search-text" class="form-control smart-tips search-key" 
-                    zhannei="" placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
+                    zhannei="" placeholder="谷歌搜索" style="outline:0" autocomplete="off">
                 <button class="submit" type="submit"><i class="iconfont icon-search"></i></button>
             </form>
 
             <div id="search-list" class="hide-type-list">
                 <div class="search-group group-a">
                     <ul class="search-type">
-		        <li><input hidden="" type="radio" name="type" checked="checked"
-                                id="type-baidu"
-                                value="https://www.baidu.com/s?wd=" 
-                                data-placeholder="百度一下，你就知道">
-                            <label for="type-baidu"><span class="text-muted">百度</span></label>
-                        </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-bing"
                                 value="https://cn.bing.com/search?q=" 
                                 data-placeholder="微软 Bing 搜索">
 			    <label for="type-bing"><span class="text-muted">必应</span></label>
                         </li>
-                        <li><input hidden="" type="radio" name="type" 
+                        <li><input hidden="" type="radio" name="type" checked="checked"
                                 id="type-google"
                                 value="https://www.google.com/search?q=" 
                                 data-placeholder="谷歌搜索">
@@ -483,41 +477,23 @@
                 </div>
                 <div class="search-group group-b">
                     <ul class="search-type">
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-baidu1"
-                                value="https://www.baidu.com/s?wd=" 
-                                data-placeholder="百度一下，你就知道">
-                            <label for="type-baidu1"><span class="text-muted">百度</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
+                        <li><input hidden="" type="radio" name="type" checked="checked"
                                 id="type-google1"
                                 value="https://www.google.com/search?q=" 
                                 data-placeholder="谷歌搜索">
                             <label for="type-google1"><span class="text-muted">谷歌</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" 
-                                id="type-360"
-                                value="https://www.so.com/s?q=" 
-                                data-placeholder="360 好搜">
-                            <label for="type-360"><span class="text-muted">360</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-sogo"
-                                value="https://www.sogou.com/web?query=" 
-                                data-placeholder="搜狗搜索"> 
-                            <label for="type-sogo"><span class="text-muted">搜狗</span></label>
+                                id="type-ddg"
+                                value="https://duckduckgo.com/?q=" 
+                                data-placeholder="DuckDuckGo">
+                            <label for="type-ddg"><span class="text-muted">DuckDuckGo</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-bing1"
                                 value="https://cn.bing.com/search?q=" 
                                 data-placeholder="微软 Bing 搜索">
                             <label for="type-bing1"><span class="text-muted">必应</span></label>
-                        </li>
-                        <li><input hidden="" type="radio" name="type" 
-                                id="type-sm"
-                                value="https://yz.m.sm.cn/s?q=" 
-                                data-placeholder="UC 移动端搜索">
-                            <label for="type-sm"><span class="text-muted">神马</span></label>
                         </li>
                     </ul>
                 </div>
@@ -543,7 +519,7 @@
                         </li>
                         <li><input hidden="" type="radio" name="type" 
                                 id="type-ping"
-                                value="https://ping.chinaz.com/"
+                                value="https://www.itdog.cn/ping/"
                                 data-placeholder="请输入网址(不带 https://)">
                             <label for="type-ping"><span class="text-muted">PING 检测</span></label>
                         </li>
@@ -961,20 +937,20 @@
                                         
 					    
                                             <img class="lazy" src="assets/images/logos/%e5%85%b3%e6%b3%a8.jpg" data-src="assets/images/logos/%e5%85%b3%e6%b3%a8.jpg"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="关注我们">
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="加我好友">
 					    
                                         
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>关注我们</strong>
+                                            <strong>加我好友</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">微信公众号：BioIT 爱好者！</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">很高兴认识你，请备注来意！</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.bioitee.com" class="togo text-center text-muted is-views" data-id="689"
+                        <a href="" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -5607,9 +5583,9 @@
     <div class="friendlink text-xs card">
         <div class="card-body"> 
 	    
-	    <a href="https://bioitee.com/" title="Bio &amp; IT 网址导航" target="_blank">BioIT爱好者</a>
+	    <a href="https://blog.keaidang.com/" title="个人博客" target="_blank">keaidang的个人博客</a>
 	    
-	    <a href="https://weiyan.cc/" title="个人博客" target="_blank">维燕的知识花园</a>
+	    <a href="https://9o.pw/" title="学习平台" target="_blank">永恒 学习平台</a>
 	    
         </div>
     </div>
@@ -5630,15 +5606,15 @@
                     <i class="mode-ico iconfont icon-qq"></i>
                 </a>
                 
-                
-		<a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
-                    data-toggle="tooltip" data-placement="left" title="日间模式">
-                    <i class="mode-ico iconfont icon-night"></i>
+                 
+                <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
+                    data-toggle="tooltip" data-placement="left" title="夜间模式">
+                    <i class="mode-ico iconfont icon-light"></i>
                 </a>
-                
+		
             </div>
             <div class="footer-inner">
-                <div class="footer-text">本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：shen@weiyan.cc <br/>© 2021 - 2025 By <a href="https://github.com/shenweiyan/WebStack-Hugo">WebStack-Hugo</a> | <a href="https://github.com/bioitee/">Bio IT 爱好者</a> | <a href="http://beian.miit.gov.cn/">粤ICP备16023717号</a><br/></div>
+                <div class="footer-text">本站为kaidang的个人导航网站，如有内容侵犯了你的权益，请联系删除相关内容 <br/>联系邮箱：keaidang@gmail.com | <a href="http://beian.miit.gov.cn/">鲁ICP备2025186072号</a><br/></div>
             </div>
         </footer>
     </div>

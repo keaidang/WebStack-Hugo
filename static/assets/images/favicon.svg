@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="9o favicon">
+  <title>9o Favicon</title>
+  <style>
+    :root { --c: #3A86FF; }
+  </style>
+  <g fill="var(--c)">
+    <path fill-rule="evenodd" d="
+      M 360 260
+      a 160 160 0 1 1 0 320
+      a 160 160 0 1 1 0 -320
+      M 360 324
+      a 96 96 0 1 0 0 192
+      a 96 96 0 1 0 0 -192
+    "/>
+    <rect x="440" y="430" width="88" height="300" rx="44" />
+    <path fill-rule="evenodd" d="
+      M 720 420
+      a 160 160 0 1 1 0 320
+      a 160 160 0 1 1 0 -320
+      M 720 484
+      a 96 96 0 1 0 0 192
+      a 96 96 0 1 0 0 -192
+    "/>
+  </g>
+</svg>
+
+
