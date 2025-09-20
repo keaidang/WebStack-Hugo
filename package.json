@@ -2,7 +2,7 @@
     "name": "webstack-hugo-on-edgeone",
     "private": true,
     "scripts": {
-      "prebuild": "rm -rf exampleSite/themes/webstack-hugo && mkdir -p exampleSite/themes && cp -R . exampleSite/themes/webstack-hugo && rm -rf exampleSite/themes/webstack-hugo/exampleSite exampleSite/themes/webstack-hugo/node_modules exampleSite/themes/webstack-hugo/.git exampleSite/themes/webstack-hugo/.github",
+      "prebuild": "rm -rf exampleSite/themes/webstack-hugo && mkdir -p exampleSite/themes/webstack-hugo && tar --exclude='./exampleSite' --exclude='./node_modules' --exclude='./.git' --exclude='./.github' -cf - . | tar -C exampleSite/themes/webstack-hugo -xf -",
       "build": "hugo --minify -s exampleSite",
       "dev": "hugo server -D -s exampleSite",
       "clean": "rm -rf exampleSite/public",
