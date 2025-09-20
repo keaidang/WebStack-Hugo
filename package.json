@@ -1,0 +1,13 @@
+{
+    "name": "webstack-hugo-on-eo",
+    "private": true,
+    "scripts": {
+      "build": "hugo --minify",
+      "dev": "hugo server -D",
+      "clean": "rm -rf public"
+    },
+    "devDependencies": {
+      "hugo-extended": "^0.129.0"
+    }
+  }
+  
