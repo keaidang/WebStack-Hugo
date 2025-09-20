@@ -3,3 +3,16 @@
   -b http://localhost:1314/ --bind 127.0.0.1 --port 1314
 
   
+
+导航数据：exampleSite/data/webstack.yml
+顶部菜单：exampleSite/data/headers.yml
+友情链接：exampleSite/data/friendlinks.yml
+页面骨架/区块：
+主页聚合：layouts/index.html
+头部：layouts/partials/header.html
+侧栏：layouts/partials/sidebar.html
+搜索区：layouts/partials/content_search.html
+列表区：layouts/partials/content_main.html
+页脚：layouts/partials/footer.html
+图片与图标：放到 static/assets/images/logos/，在 YAML 里写文件名即可
+样式覆写：static/assets/css/custom-style.css（已在头部最后引入，用它覆盖默认样式）

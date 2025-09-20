@@ -1,0 +1,379 @@
+/* 站内搜索样式 */
+
+/* 搜索模式切换按钮 */
+.search-mode-toggle {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.search-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.search-mode-toggle.active {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.search-mode-toggle i {
+    margin-right: 4px;
+}
+
+/* 搜索结果容器 */
+.site-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+/* 搜索结果头部 */
+.search-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 8px 8px 0 0;
+}
+
+.search-results-count {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.clear-search {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.clear-search:hover {
+    background: #e9ecef;
+    color: #495057;
+}
+
+/* 搜索结果列表 */
+.search-results-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 搜索结果项 */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f3f4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* 搜索结果内容 */
+.search-result-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-result-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.search-result-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.search-result-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.search-result-category {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.search-result-url {
+    color: #28a745;
+    font-family: monospace;
+}
+
+/* 搜索结果操作按钮 */
+.search-result-actions {
+    margin-left: 12px;
+}
+
+.search-result-actions .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* 无搜索结果 */
+.search-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+}
+
+.search-no-results i {
+    font-size: 48px;
+    color: #dee2e6;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.search-no-results p {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.search-no-results small {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+/* 高亮文本 */
+mark {
+    background: #fff3cd;
+    color: #856404;
+    padding: 1px 2px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+/* 搜索高亮效果 */
+.search-highlight {
+    background: rgba(255, 193, 7, 0.2) !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .search-mode-toggle {
+        right: 10px;
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+    
+    .search-mode-toggle i {
+        margin-right: 2px;
+    }
+    
+    .site-search-results {
+        left: 10px;
+        right: 10px;
+        max-height: 400px;
+    }
+    
+    .search-result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    
+    .search-result-actions {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+    }
+    
+    .search-result-actions .btn {
+        width: 100%;
+    }
+    
+    .search-result-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+    .site-search-results {
+        background: #2d3748;
+        border-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .search-results-header {
+        background: #1a202c;
+        border-color: #4a5568;
+    }
+    
+    .search-results-count {
+        color: #a0aec0;
+    }
+    
+    .clear-search {
+        color: #a0aec0;
+    }
+    
+    .clear-search:hover {
+        background: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .search-result-item {
+        border-color: #4a5568;
+    }
+    
+    .search-result-item:hover {
+        background: #1a202c;
+    }
+    
+    .search-result-title {
+        color: #e2e8f0;
+    }
+    
+    .search-result-description {
+        color: #a0aec0;
+    }
+    
+    .search-result-category {
+        background: #2b6cb0;
+        color: #bee3f8;
+    }
+    
+    .search-result-url {
+        color: #68d391;
+    }
+    
+    .search-no-results {
+        color: #a0aec0;
+    }
+    
+    .search-no-results i {
+        color: #4a5568;
+    }
+    
+    .search-no-results small {
+        color: #718096;
+    }
+    
+    mark {
+        background: #744210;
+        color: #f6e05e;
+    }
+    
+    .search-highlight {
+        background: rgba(255, 193, 7, 0.3) !important;
+    }
+}
+
+/* 动画效果 */
+.site-search-results {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-result-item {
+    animation: fadeInUp 0.2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 滚动条样式 */
+.search-results-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.search-results-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.search-results-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 深色模式滚动条 */
+@media (prefers-color-scheme: dark) {
+    .search-results-list::-webkit-scrollbar-track {
+        background: #4a5568;
+    }
+    
+    .search-results-list::-webkit-scrollbar-thumb {
+        background: #718096;
+    }
+    
+    .search-results-list::-webkit-scrollbar-thumb:hover {
+        background: #a0aec0;
+    }
+}

@@ -4,10 +4,10 @@
             {{ range .list }}
 	    <!--正文网址导航--》
             <!-- {{ .term }} -->
-            <div class="d-flex flex-fill">
+            <div class="d-flex flex-fill webstack-category">
                 <h4 class="text-gray text-lg mb-4">
                     <i class="site-tag iconfont icon-tag icon-lg mr-1" id="{{ md5 .term }}"></i>
-                    {{ .term }}
+                    <span class="category-title">{{ .term }}</span>
                 </h4>
                 <div class="flex-fill"></div>
                 <!--a class='btn-move text-xs' href='#'>more+</a-->
@@ -16,7 +16,7 @@
             <div class="row">
                 {{ range .links }}
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
+                    <div class="url-body default webstack-item" data-category="{{ .term }}">
 			<!--去除 Tooltip
                         <a href="{{ .url }}" target="_blank" data-id="" data-url="{{ .url }}" class="card no-c mb-4" title="{{ .title }}">
 			去除 Tooltip -->
@@ -55,9 +55,9 @@
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>{{ .title }}</strong>
+                                            <strong class="webstack-title">{{ .title }}</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">{{ .description }}</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs webstack-description">{{ .description }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -76,10 +76,10 @@
         {{ else }}
 	    <!--常用推荐-->
             <!-- {{ .taxonomy }} -->
-            <div class="d-flex flex-fill">
+            <div class="d-flex flex-fill webstack-category">
                 <h4 class="text-gray text-lg mb-4">
                     <i class="site-tag iconfont icon-tag icon-lg mr-1" id="{{ md5 .taxonomy }}"></i>
-                    {{ .taxonomy }}
+                    <span class="category-title">{{ .taxonomy }}</span>
                 </h4>
                 <!--div class="flex-fill"></div>
                 <a class='btn-move text-xs' href='#'>more+</a-->
@@ -88,7 +88,7 @@
             <div class="row">
                 {{ range .links }}
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
+                    <div class="url-body default webstack-item" data-category="{{ .taxonomy }}">
 			<!--去除 Tooltip
 			<a href="{{ .url }}" target="_blank" data-id="" data-url="{{ .url }}" class="card no-c mb-4" title="{{ .title }}">
 			-->
@@ -127,9 +127,9 @@
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>{{ .title }}</strong>
+                                            <strong class="webstack-title">{{ .title }}</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">{{ .description }}</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs webstack-description">{{ .description }}</p>
                                     </div>
                                 </div>
                             </div>
