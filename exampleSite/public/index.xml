@@ -6,14 +6,14 @@
     <description>Recent content on 9o 网址导航</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Jul 2020 19:27:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Sep 2025 22:21:08 +0800</lastBuildDate>
     <atom:link href="http://localhost:1314/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于网站</title>
       <link>http://localhost:1314/about/</link>
-      <pubDate>Tue, 28 Jul 2020 19:27:08 +0800</pubDate>
+      <pubDate>Sun, 21 Sep 2025 22:21:08 +0800</pubDate>
       <guid>http://localhost:1314/about/</guid>
-      <description>&lt;h4 id=&#34;这是-hugo-版-webstack-主题&#34;&gt;这是 Hugo 版 WebStack 主题&lt;/h4&gt;&#xA;&lt;p&gt;本项目是基于&lt;strong&gt;纯静态&lt;/strong&gt;的网址导航网站 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;webstack.cc&lt;/a&gt; 制作的 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 主题，其中部分代码参考了以下几个开源项目：&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/liutongxu/liutongxu.github.io&#34;&gt;https://github.com/liutongxu/liutongxu.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/iplaycode/webstack-hugo&#34;&gt;https://github.com/iplaycode/webstack-hugo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;主题安装后，将 exampleSite 目录下的文件复制到 hugo 站点根目录，根据需要把 config.toml 的一些信息改成自己的，导航的网址信息可通过 data 目录下 webstack.yml 修改。&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;about-container&#34;&gt;&#xA;&lt;h2 id=&#34;-欢迎来到-keaidang-的个人导航页&#34;&gt;🌟 欢迎来到 keaidang 的个人导航页&lt;/h2&gt;&#xA;&lt;div class=&#34;intro-section&#34;&gt;&#xA;&lt;p class=&#34;intro-text&#34;&gt;这是一个不精心整理的网址导航站，收集了我在日常工作和学习中经常使用的优质网站、工具和资源。&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-技术栈&#34;&gt;🛠️ 技术栈&lt;/h3&gt;&#xA;&lt;div class=&#34;tech-stack&#34;&gt;&#xA;&lt;div class=&#34;tech-item&#34;&gt;&#xA;&lt;h4&gt;🎨 前端框架&lt;/h4&gt;&#xA;&lt;p&gt;基于 &lt;strong&gt;Hugo&lt;/strong&gt; 静态网站生成器构建&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;tech-item&#34;&gt;&#xA;&lt;h4&gt;🚀 部署方式&lt;/h4&gt;&#xA;&lt;p&gt;使用 &lt;strong&gt;EdgeOne Pages&lt;/strong&gt; 自动构建和部署&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;tech-item&#34;&gt;&#xA;&lt;h4&gt;📱 响应式设计&lt;/h4&gt;&#xA;&lt;p&gt;完美适配桌面端和移动端设备&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-项目来源&#34;&gt;📚 项目来源&lt;/h3&gt;&#xA;&lt;div class=&#34;source-section&#34;&gt;&#xA;&lt;p&gt;本项目基于开源项目 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34; target=&#34;_blank&#34;&gt;webstack.cc&lt;/a&gt; 制作，感谢以下开源贡献者：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

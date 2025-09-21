@@ -12,12 +12,56 @@ body,html{font-size:14px;}
 /*搜索框搜索图标颜色*/
 #search button i{color:#6C757D;font-size:18px}
 
-/*顶部导航栏字体+图标颜色*/
-.big-header-banner .page-header{color:#ffffff;background:rgba(255,255,255,0);box-shadow:none;transition:color .3s,background-color .3s}
+/*顶部导航栏字体+图标颜色 - 页面顶部时完全透明*/
+.big-header-banner .page-header{color:#ffffff;background:rgba(255,255,255,0);box-shadow:none;transition:all .3s ease}
 .big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a,.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item){color:#ffffff;}
 .big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a:hover,.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item):hover{color:#3A86FF;}
 .big-header-banner:not(.header-bg) .header-mini-btn path{stroke:#ffffff;}
 .big-header-banner:not(.header-bg) .header-mini-btn label:hover path{stroke:#ffffff;}
+
+/*滚动后顶栏样式 - 增加透明度和模糊效果*/
+.big-header-banner.header-bg .page-header{
+    background:rgba(255,255,255,0.1) !important;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow:0 2px 20px rgba(0,0,0,0.1);
+    transition:all .3s ease;
+}
+
+/*白天模式顶部导航栏样式 - 页面顶部时透明*/
+.io-grey-mode .big-header-banner .page-header{color:#333333;background:rgba(255,255,255,0);box-shadow:none;transition:all .3s ease}
+.io-grey-mode .big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a,.io-grey-mode .big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item){color:#333333;}
+.io-grey-mode .big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a:hover,.io-grey-mode .big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item):hover{color:#007bff;}
+.io-grey-mode .big-header-banner:not(.header-bg) .header-mini-btn path{stroke:#333333;}
+.io-grey-mode .big-header-banner:not(.header-bg) .header-mini-btn label:hover path{stroke:#007bff;}
+
+/*白天模式滚动后顶栏样式 - 增加透明度和模糊效果*/
+.io-grey-mode .big-header-banner.header-bg .page-header{
+    background:rgba(255,255,255,0.9) !important;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow:0 2px 20px rgba(0,0,0,0.15);
+    transition:all .3s ease;
+}
+
+/*确保在亮色背景下顶栏有足够的对比度*/
+.io-grey-mode .big-header-banner .page-header .navbar-nav>li>a,
+.io-grey-mode .big-header-banner .navbar-menu a:not(.dropdown-item),
+.io-grey-mode .big-header-banner .page-header .navbar-nav>li>a i,
+.io-grey-mode .big-header-banner .navbar-menu a:not(.dropdown-item) i {
+    color: #333333 !important;
+    text-shadow: none;
+}
+
+/*亮色背景下的一言文字颜色*/
+.io-grey-mode .big-header-banner #hitokoto a {
+    color: #333333 !important;
+}
+
+/*亮色背景下的天气组件文字颜色*/
+.io-grey-mode .big-header-banner .weather {
+    color: #333333 !important;
+}
 
 /*搜索栏字体+背景*/
 .header-big #search-text{color:#6C757D;}
@@ -101,6 +145,285 @@ footer.main-footer .footer-text a:hover {
 /*About页面*/
 .panel .panel-body a {color: #007bff;}
 .panel .panel-body a:hover {color: #979898;}
+
+/*关于页面黑色主题样式*/
+.io-black-mode .page-body {background: #1a1a1a !important;}
+.io-black-mode .main-content {background: #1a1a1a;}
+.io-black-mode .container {background: #1a1a1a; color: #ffffff;}
+.io-black-mode .content {color: #ffffff;}
+.io-black-mode .content a {color: #3A86FF;}
+.io-black-mode .content a:hover {color: #ffffff;}
+.io-black-mode .content h1, .io-black-mode .content h2, .io-black-mode .content h3, .io-black-mode .content h4 {color: #ffffff;}
+.io-black-mode .content p {color: #ffffff;}
+.io-black-mode .content ul li {color: #ffffff;}
+.io-black-mode .content strong {color: #ffffff;}
+.io-black-mode main {background: #1a1a1a;}
+
+/*关于页面白天主题样式*/
+.io-grey-mode .page-body {background: #f8f9fa !important;}
+.io-grey-mode .main-content {background: #f8f9fa;}
+.io-grey-mode .container {background: #f8f9fa; color: #333333;}
+.io-grey-mode .content {color: #333333;}
+.io-grey-mode .content a {color: #007bff;}
+.io-grey-mode .content a:hover {color: #0056b3;}
+.io-grey-mode .content h1, .io-grey-mode .content h2, .io-grey-mode .content h3, .io-grey-mode .content h4 {color: #333333;}
+.io-grey-mode .content p {color: #333333;}
+.io-grey-mode .content ul li {color: #333333;}
+.io-grey-mode .content strong {color: #333333;}
+.io-grey-mode main {background: #f8f9fa;}
+
+/*关于页面美化样式*/
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-section {
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(0, 123, 255, 0.1) 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid rgba(58, 134, 255, 0.2);
+}
+
+.io-grey-mode .intro-section {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(58, 134, 255, 0.1) 100%);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    color: #ffffff;
+}
+
+.io-grey-mode .intro-text {
+    color: #333333;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.io-grey-mode .tech-item {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    background: rgba(58, 134, 255, 0.1);
+    border-color: rgba(58, 134, 255, 0.3);
+}
+
+.io-grey-mode .tech-item:hover {
+    background: rgba(0, 123, 255, 0.1);
+    border-color: rgba(0, 123, 255, 0.3);
+}
+
+.tech-item h4 {
+    color: #3A86FF;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.io-grey-mode .tech-item h4 {
+    color: #007bff;
+}
+
+.tech-item p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.io-grey-mode .tech-item p {
+    color: #333333;
+}
+
+.source-section {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.io-grey-mode .source-section {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.source-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(58, 134, 255, 0.1);
+    color: #3A86FF;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(58, 134, 255, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.io-grey-mode .source-link {
+    background: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+}
+
+.source-link:hover {
+    background: rgba(58, 134, 255, 0.2);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(58, 134, 255, 0.3);
+}
+
+.io-grey-mode .source-link:hover {
+    background: rgba(0, 123, 255, 0.2);
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.source-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.welcome-card, .contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.io-grey-mode .welcome-card, .io-grey-mode .contact-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card:hover, .contact-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-3px);
+}
+
+.io-grey-mode .welcome-card:hover, .io-grey-mode .contact-card:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.welcome-card h4, .contact-card h4 {
+    color: #3A86FF;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.io-grey-mode .welcome-card h4, .io-grey-mode .contact-card h4 {
+    color: #007bff;
+}
+
+.welcome-card p, .contact-card p {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.io-grey-mode .welcome-card p, .io-grey-mode .contact-card p {
+    color: #333333;
+}
+
+.email-link {
+    background: linear-gradient(135deg, #3A86FF, #007bff);
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.email-link a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.email-link a:hover {
+    color: #ffffff !important;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.io-grey-mode .footer-note {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-note p {
+    margin: 0;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.io-grey-mode .footer-note p {
+    color: #333333;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+    }
+    
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+    
+    .source-links {
+        flex-direction: column;
+    }
+    
+    .source-link {
+        justify-content: center;
+    }
+}
 
 /*网格背景*/
 .io-grey-mode .page-container .grid-bg {

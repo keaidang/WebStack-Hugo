@@ -1,29 +1,32 @@
 {{ partial "header.html" . }}
 
+{{ partial "sidebar.html" . }}
+
 {{ partial "content_header.html" . }}
 
-<body class="page-body boxed-container">
+<div class="main-content flex-fill grid-bg">
     <main role="main" class="flex-shrink-0">
-    <div class="container">
-        <h1 class="mt-5">{{ .Title }}</h1>
-        <div class="content">
-            {{ .Content | markdownify | safeHTML }}
+        <div class="container">
+            <h1 class="mt-5 page-title">{{ .Title }}</h1>
+            <div class="content">
+                {{ .Content | markdownify | safeHTML }}
+            </div>
         </div>
-    </div>
     </main>
+</div>
 
-    <style>
-        .content{font-size:14px;}
-	.content a{color:#007bff;}
-	.content a:hover{color:#f1404b;}
-	.content h1,.content h2,.content h3,.content h4{margin: 15px 15px 15px 0px;}
-	.content p{line-height:1.5;margin:15px 0;}
-	.big-header-banner .page-header{background:gray;}
-	.main-content{margin-left:0px;}
-	.page-header{left:0px;}
-        img{max-width:100%;}
-    </style>
+<style>
+    /* 关于页面基础样式 */
+    .content{font-size:14px;}
+    .content h1,.content h2,.content h3,.content h4{margin: 15px 15px 15px 0px;}
+    .content p{line-height:1.5;margin:15px 0;}
+    .main-content{margin-left:0px;}
+    .page-header{left:0px;}
+    img{max-width:100%;}
+</style>
 
 {{ partial "content_footer.html" . }}
+
+{{ partial "modal_search.html" . }}
 
 {{ partial "footer.html" . }}

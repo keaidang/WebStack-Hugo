@@ -1,67 +1,83 @@
 ---
 
 - taxonomy: 自建服务
-  icon: far fa-star
+  icon: fas fa-server fa-lg
   links: 
-    - title: 语雀
-      logo: 语雀.webp
-      url: https://www.yuque.com/
-      description: 专业的云端知识库。
-    - title: QQ 邮箱
-      logo: qq邮箱.png
-      url: http://mail.qq.com/
-      description: 腾讯 QQ 邮箱。
-    - title: 开源中国
-      logo: 开源中国.jpg
-      url: https://www.oschina.net/
-      description: 中文开源技术交流社区。
-    - title: GitHub
-      logo: github.png
-      url: https://github.com/
-      description: GitHub 开源社区。
-    - title: 搜狗微信
-      logo: 搜狗微信.jpg
-      url: https://weixin.sogou.com/
-      description: 搜狗微信搜索，一搜即达。
-    - title: 知乎
-      logo: 知乎.png
-      url: https://www.zhihu.com/
-      description: 知乎社区。
-    - title: V2EX
-      logo: v2ex.jpg
-      url: https://www.v2ex.com/
-      description: V2EX 创意工作者的社区。
+    - title: Docker管理器
+      logo: dpanel.ico
+      url: https://docker.keaidang.top:5245/
+      description: DPanel面板
+    - title: NAS主页
+      logo: synology.png
+      url: https://keaidang.top:5001
+      description: 群晖主页
+    - title: 2FAuth
+      logo: 2fauth.ico
+      url: https://2fa.keaidang.top:520/login
+      description: 自建authentication
+    - title: 自建邮件服务
+      logo: alimail.ico
+      url: https://qiye.aliyun.com/alimail/auth/login?reurl=%2Falimail%2Fentries%2Fv5.1%2Fmail%2Finbox%2Fall%2FeyJpZCI6IjJfMDpEenp6enlMSjlaeSQtLS0uZU9TS0I3byIsInR5cGUiOiJtYWlsIiwiaXNEcmFmdE1haWwiOmZhbHNlfQ
+      description: 邮件服务
+    - title: 生活分享站
+      logo: blog.png
+      url: https://blog.keaidang.top
+      description: 一个还啥也没写的小博客
+    - title: Synology Photos
+      logo: synology_photos.png
+      url: https://keaidang.top:5001/?launchApp=SYNO.Foto.AppInstance&SynoToken=ZcmgL.Qp8Lf6o
+      description: 群晖相册
+    - title: Alist
+      logo: alist.png
+      url: https://a.keaidang.top:5245/
+      description: 文件管理器
+    - title: 远程 firefox
+      logo: firefox.ico
+      url: https://firefox.keaidang.top:5245/
+      description: vnc远程浏览器
+    - title: Certd
+      logo: certd.svg
+      url: https://certd.keaidang.top:5245/
+      description: 证书自动化部署
+    - title: naive boom
+      logo: naive.ico
+      url: https://naive.keaidang.top:5245
+      description: 阅后即焚
+    - title: synctv
+      logo: synctv.svg
+      url: https://synctv.keaidang.top:5245/web/
+      description: 共享观影平台
+    - title: jiyutrtainer
+      logo: jiyutrtainer.png
+      url: https://keaidang.top:5001/sharing/xweCaAS7u
+      description: 点击下载jiyutrtainer
+    - title: openwrt
+      logo: openwrt.svg
+      url: http://192.168.1.100/cgi-bin/luci/
+      description: 软路由管理
+    - title: Lucky面板
+      logo: lucky.png
+      url: https://lucky.keaidang.top:5245
+      description: 转发管理
+    - title: Gemini API 代理服务
+      logo: gemini.ico
+      url: https://cgwevpwbvfyc.eu-central-1.clawcloudrun.com/
+      description: API管理
+    - title: 哆啦A梦
+      logo: doraemon.svg
+      url: https://am.adgyz.top/dashboard
+      description: 隧道面板 深-港
 
 
-- taxonomy: 计算机
+- taxonomy: 常用分类
   icon: fas fa-flask fa-lg
   list:
-    - term: 计算机
+    - term: 常用AI
       links:
-        - title: NCBI
+        - title: test
           logo: ncbi.jpg
-          url: https://www.ncbi.nlm.nih.gov/
-          description: National Center for Biotechnology Information.
-        - title: Bioconda
-          logo: bioconda.jpg
-          url: https://anaconda.org/bioconda/
-          description: "Bioconda :: Anaconda.org."
-        - title: CPAN
-          logo: cpan.jpg
-          url: https://metacpan.org/
-          description: Search the CPAN.
-        - title: Galaxy Project
-          logo: galaxy_project.png
-          url: https://galaxyproject.org/
-          description: Galaxy Community Hub.
-        - title: R Project
-          logo: r-project.jpg
-          url: https://www.r-project.org/
-          description: https://www.r-project.org
-        - title: Bioconductor
-          logo: bioconductor.jpg
-          url: http://www.bioconductor.org/
-          description: http://www.bioconductor.org
+          url: #
+          description: 建设中.  
           
     - term: 云服务器
       links:
@@ -121,7 +137,7 @@
           logo: claw.png
           url: https://eu-central-1.run.claw.cloud/
           description: 爪爪
-    - term: 办公学习
+    - term: 爱看论坛
       links:
         - title: 有道词典
           logo: 有道词典.png
@@ -139,6 +155,25 @@
           logo: ProcessOn.png
           url: https://www.processon.com/
           description: 免费在线作图、实时协作。
+    - term: 常用工具
+      links:
+        - title: 有道词典
+          logo: 有道词典.png
+          url: https://www.youdao.com/
+          description: 免费，即时的多语种在线翻译。
+        - title: 有道翻译
+          logo: 有道词典.png
+          url: http://fanyi.youdao.com/
+          description: 有道翻译。
+        - title: 谷歌翻译
+          logo: 谷歌翻译.jpg
+          url: https://translate.google.cn/
+          description: 谷歌翻译。
+        - title: ProcessOn
+          logo: ProcessOn.png
+          url: https://www.processon.com/
+          description: 免费在线作图、实时协作。
+          
         
 
 - taxonomy: 悠闲娱乐
