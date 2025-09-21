@@ -66,6 +66,24 @@ WebStack 有非常多的魔改版本，这是其中一个。如果你对本主�
 
 - [链接1](https://weiyan.cc/tech/discussions-10/) | [链接2](https://github.com/shenweiyan/Digital-Garden/discussions/10)
 
+### EdgeOne Pages 自动部署
+
+本项目已适配 EdgeOne Pages，完成一次性配置后，每次向默认分支推送代码都会自动构建并发布。
+
+- 构建命令: `hugo`
+- 构建输出目录: `public`
+- 可选环境变量: `HUGO_VERSION`（例如 `0.125.0`）、`HUGO_ENV=production`
+
+快速配置步骤：
+
+1. 在 EdgeOne Pages 新建站点并关联本仓库。
+2. Framework/框架选择 Hugo，构建命令填写 `hugo`，输出目录填写 `public`。
+3. 如需指定 Hugo 版本，添加环境变量 `HUGO_VERSION`；生产环境可设置 `HUGO_ENV=production`。
+4. 保存后，每次向仓库默认分支推送都会自动触发构建与部署。
+5. 自定义域名：在 EdgeOne Pages 绑定域名后，将 Hugo 配置中的 `baseURL` 设置为你的域名（可在 `config.toml` 或 `exampleSite/config.toml` 中修改）。
+
+提示：若你选择在本地先行构建，也可以将生成的 `public/` 目录直接作为静态资源部署。
+
 ### 感谢
 
 本主题的部分代码参考了以下几个开源项目，特此感谢。
