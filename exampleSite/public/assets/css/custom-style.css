@@ -114,6 +114,61 @@ footer.main-footer .footer-text a:hover {
     border-radius: 20%;
 }
 
+/*页面标题美化样式*/
+.page-title {
+    background: linear-gradient(135deg, #3A86FF 0%, #007bff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+.page-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #3A86FF 0%, #007bff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@keyframes titleGlow {
+    0% {
+        text-shadow: 0 0 20px rgba(58, 134, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/*标题容器样式*/
+.title-container {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.title-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3A86FF, transparent);
+    border-radius: 2px;
+}
+
 
 
 
