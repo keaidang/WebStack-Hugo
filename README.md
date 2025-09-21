@@ -1,7 +1,5 @@
-> [!NOTE]
-> **2025年05月17日：更多新功能，请参考：<https://github.com/PagesX> 项目！**
-
-
+## 本仓库是WebStack-Hugo的分支仓库，是作者自用的，添加了作者的导航链接，增加了edgeone自动构建的配置
+## 本仓库修改了很多内容 请使用原版仓库
 ## 一个基于 Hugo 的静态响应式网址导航主题 
 
 本项目是基于**纯静态**的网址导航网站 [webstack.cc](https://github.com/WebStackPage/WebStackPage.github.io) 制作的 [Hugo](https://gohugo.io/) 主题，是一个基于 Hugo 的静态响应式网址导航主题。<br/>
@@ -84,25 +82,3 @@ WebStack 有非常多的魔改版本，这是其中一个。如果你对本主�
 
 提示：若你选择在本地先行构建，也可以将生成的 `public/` 目录直接作为静态资源部署。
 
-### 感谢
-
-本主题的部分代码参考了以下几个开源项目，特此感谢。
-
-- [WebStackPage/WebStackPage.github.io](https://github.com/WebStackPage/WebStackPage.github.io)
-- [liutongxu/liutongxu.github.io](https://github.com/liutongxu/liutongxu.github.io)
-- [iplaycode/webstack-hugo](https://github.com/iplaycode/webstack-hugo)
-
-感谢以下所有朋友对本主题所做出的贡献。  
-- [@yuanj82](https://github.com/yuanj82)        
-- [@yanbeiyinhanghang](https://github.com/yinhanghang)     
-- [@jetsung](https://github.com/jetsung)
-
-### 赞赏
-
-如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 >.<
-
-![donate-wecaht-aliapy](https://kg.weiyan.cc/0000/img/donate.webp)
-
-### Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=shenweiyan/WebStack-Hugo&type=Date)](https://star-history.com/#shenweiyan/WebStack-Hugo&Date)
