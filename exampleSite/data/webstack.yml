@@ -74,10 +74,60 @@
   list:
     - term: 常用AI
       links:
-        - title: test
-          logo: ncbi.jpg
-          url: #
-          description: 建设中.  
+        - title: M365 copilot
+          logo: copilot.png
+          url: https://m365.cloud.microsoft/chat/?auth=2
+          description: 商业版 满血GPT5.0
+        - title: Google AI Studio
+          logo: studio.svg
+          url: https://aistudio.google.com/app/prompts/new_chat
+          description: 白嫖就是好
+        - title: ChatGPT
+          logo: chatgpt.ico
+          url: https://chat.openai.com/
+          description: 降智玩意
+        - title: Gamini pro
+          logo: gemini.svg
+          url: https://gemini.google.com/
+          description: google premium
+        - title: Chatbox
+          logo: chatbox.ico
+          url: https://web.chatboxai.app/
+          description: ai api调用
+        - title: claude
+          logo: claude.png
+          url: https://claude.ai/
+          description: 克劳德
+        - title: agentrouter
+          logo: agentrouter.png
+          url: https://agentrouter.org/
+          description: 调用api
+    - term: 爱看的论坛
+      links:
+        - title: nodeseek
+          logo: hostloc.png
+          url: https://www.nodeseek.com/
+          description: nodeseek论坛
+        - title: nodedaily
+          logo: kechuang.png
+          url: https://nodedaily.com/
+          description: nodedaily最新
+        - title: linux.do
+          logo: linux..png
+          url: https://linux.do
+          description: 综合社区
+        - title: V2EX
+          logo: v2ex.png
+          url: https://www.v2ex.com/
+          description: V2EX社区
+        - title: nodeloc
+          logo: nodeloc.png
+          url: https://www.nodeloc.com/
+          description: nodeloc
+        - title: 通信人家园
+          logo: tongxin.ico
+          url: https://www.txrjy.com/
+          description: 通信技术论坛
           
     - term: 云服务器
       links:
@@ -122,7 +172,7 @@
           url: https://www.hioyun.cn/clientarea
           description: 买鸡鸡
         - title: 伤心云
-          logo: sadidc.ico
+          logo: sadidc.png
           url: https://sadidc.com
           description: Sad Cloud
         - title: 欢乐云
@@ -137,42 +187,42 @@
           logo: claw.png
           url: https://eu-central-1.run.claw.cloud/
           description: 爪爪
-    - term: 爱看论坛
-      links:
-        - title: 有道词典
-          logo: 有道词典.png
-          url: https://www.youdao.com/
-          description: 免费，即时的多语种在线翻译。
-        - title: 有道翻译
-          logo: 有道词典.png
-          url: http://fanyi.youdao.com/
-          description: 有道翻译。
-        - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
-          url: https://translate.google.cn/
-          description: 谷歌翻译。
-        - title: ProcessOn
-          logo: ProcessOn.png
-          url: https://www.processon.com/
-          description: 免费在线作图、实时协作。
-    - term: 常用工具
-      links:
-        - title: 有道词典
-          logo: 有道词典.png
-          url: https://www.youdao.com/
-          description: 免费，即时的多语种在线翻译。
-        - title: 有道翻译
-          logo: 有道词典.png
-          url: http://fanyi.youdao.com/
-          description: 有道翻译。
-        - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
-          url: https://translate.google.cn/
-          description: 谷歌翻译。
-        - title: ProcessOn
-          logo: ProcessOn.png
-          url: https://www.processon.com/
-          description: 免费在线作图、实时协作。
+    # - term: 待定
+    #   links:
+    #     - title: 有道词典
+    #       logo: 有道词典.png
+    #       url: https://www.youdao.com/
+    #       description: 免费，即时的多语种在线翻译。
+    #     - title: 有道翻译
+    #       logo: 有道词典.png
+    #       url: http://fanyi.youdao.com/
+    #       description: 有道翻译。
+    #     - title: 谷歌翻译
+    #       logo: 谷歌翻译.jpg
+    #       url: https://translate.google.cn/
+    #       description: 谷歌翻译。
+    #     - title: ProcessOn
+    #       logo: ProcessOn.png
+    #       url: https://www.processon.com/
+    #       description: 免费在线作图、实时协作。
+    # - term: 待定
+    #   links:
+    #     - title: 有道词典
+    #       logo: 有道词典.png
+    #       url: https://www.youdao.com/
+    #       description: 免费，即时的多语种在线翻译。
+    #     - title: 有道翻译
+    #       logo: 有道词典.png
+    #       url: http://fanyi.youdao.com/
+    #       description: 有道翻译。
+    #     - title: 谷歌翻译
+    #       logo: 谷歌翻译.jpg
+    #       url: https://translate.google.cn/
+    #       description: 谷歌翻译。
+    #     - title: ProcessOn
+    #       logo: ProcessOn.png
+    #       url: https://www.processon.com/
+    #       description: 免费在线作图、实时协作。
           
         
 
@@ -181,6 +231,14 @@
   list:
     - term: 影音视频
       links:
+        - title: YouTube
+          logo: YouTube.png
+          url: https://www.youtube.com/
+          description: 全球最大的视频分享网站。
+        - title: 哔哩哔哩
+          logo: 哔哩哔哩.png
+          url: https://www.bilibili.com/
+          description: Bilibili 视频弹幕网站。
         - title: 腾讯视频
           logo: 腾讯视频.png
           url: http://v.qq.com/
@@ -193,10 +251,10 @@
           logo: 爱奇艺.png
           url: https://www.iqiyi.com/
           description: 爱奇艺在线视频。
-        - title: 哔哩哔哩
-          logo: 哔哩哔哩.png
-          url: https://www.bilibili.com/
-          description: Bilibili 视频弹幕网站。
+        - title: Spotify
+          logo: Spotify.png
+          url: https://www.spotify.com/
+          description: 全球领先的音乐流媒体服务平台。
         - title: QQ 音乐
           logo: QQ音乐.jpg
           url: https://y.qq.com/
