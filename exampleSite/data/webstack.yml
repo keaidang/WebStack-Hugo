@@ -105,15 +105,15 @@
     - term: 爱看的论坛
       links:
         - title: nodeseek
-          logo: hostloc.png
+          logo: nodeseek.png
           url: https://www.nodeseek.com/
           description: nodeseek论坛
         - title: nodedaily
-          logo: kechuang.png
+          logo: nodedaily.svg
           url: https://nodedaily.com/
           description: nodedaily最新
         - title: linux.do
-          logo: linux..png
+          logo: linux.webp
           url: https://linux.do
           description: 综合社区
         - title: V2EX
@@ -124,6 +124,14 @@
           logo: nodeloc.png
           url: https://www.nodeloc.com/
           description: nodeloc
+        - title: 科创网
+          logo: kechuang.png
+          url: https://www.kechuang.org/c
+          description: 科创论坛
+        - title: hostloc
+          logo: hostloc.png
+          url: https://hostloc.com/
+          description: 全球主机分享论坛
         - title: 通信人家园
           logo: tongxin.ico
           url: https://www.txrjy.com/
